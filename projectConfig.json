@@ -1,0 +1,27 @@
+{
+    "logs":{
+        "info":true,
+        "error":true,
+        "requestLog":{
+            "headers":true,
+            "params":true,
+            "query":true,
+            "body":true
+        },
+        "responseLog": {
+            "statusCode": true,
+            "responseTime": true,
+            "responseData":true
+        }
+    },
+    "db": {
+        "logs":true,
+        "encryption":true
+    },
+    "errorLogs": {
+        "create": false,
+        "save": true,
+        "absolutePath": "/var/www/logs/html/mypg",
+        "maxFileSize": 5242880
+    }
+}
